@@ -2,7 +2,10 @@ import Nav from "react-bootstrap/Nav";
 
 const MyFooter = () => (
   <footer className="py-5">
-    <Nav className="justify-content-center" activeKey="/home">
+    <Nav
+      className="justify-content-center font-weight-bolder"
+      activeKey="/home"
+    >
       <Nav.Item>
         <Nav.Link href="/home">Contact us</Nav.Link>
       </Nav.Item>
