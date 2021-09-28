@@ -14,10 +14,10 @@ class LastestRelease extends Component {
       <Container className="mb-4">
         <Row className="row" style={{ marginTop: "2rem" }}>
           {books.map((book) => (
-            <Col key={book.asin} className="d-flex" xs={6} md={4}>
+            <Col key={book.asin} className="d-flex" xs={6} md={4} lg={3}>
               <Card style={{ marginTop: "2rem" }}>
                 <img
-                  className="d-block w-100"
+                  className="img-fluid d-block w-100"
                   variant="top"
                   src={book.img}
                   onClick={() => this.setState()}
@@ -37,10 +37,10 @@ class LastestRelease extends Component {
 
         <Row className="row" style={{ marginTop: "2rem" }}>
           {fanbooks.map((fantasy) => (
-            <Col key={fantasy.asin} className="d-flex" xs={6} md={4}>
+            <Col key={fantasy.asin} className="d-flex" xs={6} md={4} lg={3}>
               <Card style={{ marginTop: "2rem" }}>
                 <img
-                  className="d-block w-100"
+                  className="img-fluid d-block w-100"
                   variant="top"
                   src={fantasy.img}
                 />
