@@ -13,6 +13,9 @@ p {
   color: white;
 }
 
+.main-navbar {
+  background-color: transparent !important;
+}
 .clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;

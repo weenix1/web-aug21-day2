@@ -16,7 +16,12 @@ class LastestRelease extends Component {
           {books.map((book) => (
             <Col key={book.asin} className="d-flex" xs={6} md={4}>
               <Card style={{ marginTop: "2rem" }}>
-                <Card.Img className="" variant="top" src={book.img} />
+                <img
+                  className="d-block w-100"
+                  variant="top"
+                  src={book.img}
+                  onClick={() => this.setState()}
+                />
                 <Card.Body>
                   <Card.Title className="clamp">{book.title}</Card.Title>
                   <h4>{book.category}</h4>
@@ -34,7 +39,11 @@ class LastestRelease extends Component {
           {fanbooks.map((fantasy) => (
             <Col key={fantasy.asin} className="d-flex" xs={6} md={4}>
               <Card style={{ marginTop: "2rem" }}>
-                <Card.Img className="" variant="top" src={fantasy.img} />
+                <img
+                  className="d-block w-100"
+                  variant="top"
+                  src={fantasy.img}
+                />
                 <Card.Body>
                   <Card.Title className="clamp">{fantasy.title}</Card.Title>
                   <h4>{fantasy.category}</h4>
